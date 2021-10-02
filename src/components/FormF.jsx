@@ -62,27 +62,27 @@ const FormF = () => {
         <Form>
           <Input
             name="deposit"
-            label="Deposito Inicial"
+            label="Initial Deposit"
           />
 
           <Input
             name="contribution"
-            label="Contribucion Anual"
+            label="Annual Contribution"
           />
 
           <Input
             name="years"
-            label="Años"
+            label="Years"
           />
 
           <Input
             name="rate"
-            label="Interes Estimado"
+            label="Estimated Interest"
           />
 
           <Button
             type="submit"
-          >Enviar</Button>
+          >Calculate</Button>
         </Form>
       </Formik>
       {balance !== 0 ? <Balance>Balance Final: {balance}</Balance> : null}
